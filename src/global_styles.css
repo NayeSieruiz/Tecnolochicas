@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink-900 text-slate-200 font-sans antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-ink-800;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-cyber-600 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-cyber-500;
+}
+
+/* Reveal-on-scroll baseline */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animated grid background */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(34, 211, 238, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Glow utilities */
+.glow-cyber {
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.35);
+}
+.glow-accent {
+  box-shadow: 0 0 40px rgba(16, 185, 129, 0.35);
+}
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(120deg, #22d3ee, #34d399, #22d3ee);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientX 6s ease infinite;
+}
+
+/* Section divider line */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.25), transparent);
+}
+
+/* Nav active link indicator */
+.nav-link-active {
+  color: #22d3ee !important;
+}
+.nav-link-active::after {
+  width: 100% !important;
+}
