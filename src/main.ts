@@ -357,6 +357,81 @@ interface FaqItem {
     <!-- ===== DIVIDER ===== -->
     <div class="section-divider"></div>
 
+    <!-- ===== CONSECUENCIAS ===== -->
+    <section id="consecuencias" class="py-24 bg-ink-800 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-5 relative">
+        <div class="max-w-2xl mx-auto mb-16 reveal">
+          <div class="flex items-center gap-3 mb-3">
+            <span class="flex items-center justify-center w-8 h-8 rounded-lg bg-danger-500/15 text-danger-400 font-mono font-bold text-sm">02</span>
+            <span class="text-danger-400 font-mono text-sm">// consecuencias reales</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+            Qué pasa cuando te hackean
+          </h2>
+          <p class="text-slate-400">
+            Un acceso no autorizado a tu cuenta puede afectar tu dinero, tu identidad y tu
+            tranquilidad durante meses. Estas son las consecuencias más comunes.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="reveal group bg-ink-900 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-danger-500/40 transition-all hover:-translate-y-1">
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/5380605/pexels-photo-5380605.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                alt="Persona anónima con máscara frente a una computadora en una habitación oscura"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-2">Robo de identidad</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Los atacantes pueden usar tus datos para abrir cuentas, solicitar créditos o hacerse pasar por ti ante tus contactos.
+              </p>
+            </div>
+          </article>
+
+          <article class="reveal group bg-ink-900 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-danger-500/40 transition-all hover:-translate-y-1" style="transition-delay: 80ms">
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/5380665/pexels-photo-5380665.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                alt="Persona enmascarada usando una tarjeta de crédito frente a un computador"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-2">Pérdida de dinero</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Con acceso a tu banca en línea o tarjetas guardadas, los delincuentes pueden realizar compras y transferencias antes de que lo notes.
+              </p>
+            </div>
+          </article>
+
+          <article class="reveal group bg-ink-900 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-danger-500/40 transition-all hover:-translate-y-1" style="transition-delay: 160ms">
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/5380607/pexels-photo-5380607.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+                alt="Grupo de personas trabajando en computadoras en una habitación oscura"
+                loading="lazy"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-lg font-bold text-white mb-2">Exposición de datos privados</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Fotos, conversaciones y documentos pueden publicarse o usarse para chantajear a la víctima, con un daño emocional duradero.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIVIDER ===== -->
+    <div class="section-divider"></div>
+
     <!-- ===== EVALUACIÓN / QUIZ ===== -->
     <section id="evaluacion" class="py-24 bg-ink-800 relative overflow-hidden">
       <div class="absolute inset-0 grid-bg opacity-30"></div>
@@ -998,6 +1073,7 @@ export class App implements OnInit, OnDestroy {
   navLinks = [
     { label: 'Inicio', id: 'hero' },
     { label: 'Amenazas', id: 'amenazas' },
+    { label: 'Consecuencias', id: 'consecuencias' },
     { label: 'Evaluación', id: 'evaluacion' },
     { label: 'Cómo funciona', id: 'como-funciona' },
     { label: 'Consejos', id: 'consejos' },
